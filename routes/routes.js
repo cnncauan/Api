@@ -8,6 +8,7 @@ module.exports = app => {
     app.get('/', routesController.hello)
 
     app.get('/users', userController.listAll)
+    app.get('/user/:id', userController.listOne)
     app.post('/user', userController.create)
     app.put('/user', userController.update)
     app.delete('/user', userController.delete)
