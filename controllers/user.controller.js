@@ -24,7 +24,9 @@ exports.listAll = (req, res, next) => {
 
 exports.listOne = (req, res, next) => {
     try {
-        res.json(req.params)
+        const id = req.params.id
+
+        res.json(id)
     } catch (error) {
         console.log(error)
         return res.status(500)
@@ -33,7 +35,9 @@ exports.listOne = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     try {
-        res.json(req.query)
+        const id = req.params.id
+
+        res.json(id)
     } catch(error) {
         console.log(error)
         return res.status(500)
@@ -42,7 +46,9 @@ exports.update = (req, res, next) => {
 
 exports.delete = (req, res, next) => {
     try {
-        res.json({msg: 'exclui um usuário do db'})
+        const id = req.params.id
+
+        res.json(id)
     } catch(error) {
         console.log(error)
         return res.status(500)
