@@ -1,9 +1,14 @@
 module.exports = app => {
 
     const routesController = require('../controllers/routes.controller')
+    const userController = require('../controllers/user.controller')
 
     const router = require('express').Router
     
     app.get('/', routesController.hello)
 
+    app.get('/users', userController.listAll)
+    app.post('/user', userController.create)
+    app.put('/user', userController.update)
+    app.delete('/user', userController.delete)
 }
