@@ -1,8 +1,4 @@
-const users = [
-    {id: 1, firstName: 'john', lastName: 'Doe', email: 'john.doe@email.com'},
-    {id: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane.doe@email.com'},
-    {id: 3, firstName: 'steve', lastName: 'vai', email: 'steve.vai@email.com'},
-]
+
 
 exports.create = (req, res, next) => {
     try {
